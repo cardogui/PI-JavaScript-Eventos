@@ -9,8 +9,6 @@
         window.onload = function() {
             alert("Página carregada com sucesso!");
         };
-
-        // Evento onchange
         function mostrarValor() {
             var valor = document.getElementById("campoNome").value;
             document.getElementById("resultadoNome").textContent = "Você digitou: " + valor;
@@ -25,14 +23,12 @@
 <body>
     <h1>Exemplo de Eventos JavaScript</h1>
 
-    <!-- Evento onchange -->
     <p>
         Digite seu nome: 
         <input type="text" id="campoNome" onchange="mostrarValor()" placeholder="Digite seu nome">
     </p>
     <p id="resultadoNome"></p> <!-- Aqui será exibido o nome digitado -->
-
-    <!-- Evento onclick -->
+    
     <button onclick="exibirMensagem()">Clique aqui</button>
 
 </body>
